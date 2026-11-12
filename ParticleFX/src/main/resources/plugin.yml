@@ -1,0 +1,22 @@
+name: ParticleFX
+version: 1.0.0
+main: dev.particlefx.ParticleFXPlugin
+api-version: '1.21'
+description: 50 масштабных анимаций из частиц с GUI-меню
+authors: [ParticleFX]
+commands:
+  particlefx:
+    description: Открыть меню анимаций частиц и управлять эффектами
+    usage: /<command> [menu|play <название> [игрок]|stop [игрок]|list|reload]
+    aliases: [pfx]
+    permission: particlefx.use
+permissions:
+  particlefx.use:
+    description: Доступ к меню, списку, предпросмотру и остановке своих эффектов
+    default: true
+  particlefx.play:
+    description: Запуск эффектов
+    default: true
+  particlefx.admin:
+    description: Перезагрузка конфигурации, эффекты для других игроков, обход лимитов количества эффектов
+    default: op

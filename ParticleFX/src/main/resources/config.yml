@@ -1,0 +1,446 @@
+# ===== ParticleFX: конфигурация =====
+# Изменения применяются командой /particlefx reload
+
+defaults:
+  mode: FRONT              # SELF — на месте игрока, FRONT — перед игроком
+  front-distance: 8.0      # расстояние до точки запуска в режиме FRONT (блоков)
+  long-distance-render: true  # показывать частицы на большом расстоянии (до 512 блоков)
+
+limits:
+  scale:
+    min: 0.25
+    max: 4.0
+  duration:      # секунды
+    min: 3.0
+    max: 60.0
+  speed:
+    min: 0.25
+    max: 3.0
+  density:
+    min: 0.25
+    max: 3.0
+  radius:        # блоки
+    min: 1.0
+    max: 30.0
+  height:        # блоки
+    min: 1.0
+    max: 40.0
+  max-particles-per-tick-per-effect: 600   # лимит частиц за тик на один эффект
+  max-particles-per-tick-global: 2500      # лимит частиц за тик на весь сервер
+  max-active-effects-server: 20            # одновременно работающих эффектов на сервере
+  max-active-effects-per-player: 3         # одновременно работающих эффектов на игрока
+  admin-bypass-limits: true                # права particlefx.admin обходят лимиты количества эффектов
+
+preview:
+  max-duration-seconds: 6.0   # максимальная длительность предпросмотра
+  scale-multiplier: 0.5       # множитель масштаба
+  density-multiplier: 0.6     # множитель плотности
+  private: true               # частицы предпросмотра видит только игрок
+
+gui:
+  step:
+    scale: 0.25
+    duration: 1.0
+    speed: 0.25
+    density: 0.25
+    radius: 1.0
+    height: 1.0
+
+# Настройки по умолчанию для каждой анимации (enabled: false — скрыть и запретить)
+animations:
+  supernova:   # Сверхновая
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 8.0
+    height: 8.0
+  galactic_vortex:   # Галактический вихрь
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 10.0
+  black_hole:   # Чёрная дыра
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 9.0
+    height: 6.0
+  galaxy_collision:   # Столкновение галактик
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 8.0
+    height: 5.0
+  nebula:   # Космическая туманность
+    enabled: true
+    scale: 1.0
+    duration: 18.0
+    speed: 1.0
+    density: 1.0
+    radius: 7.0
+    height: 7.0
+  saturn_rings:   # Кольца Сатурна
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 6.0
+    height: 6.0
+  meteor_shower:   # Метеоритный дождь
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 12.0
+    height: 18.0
+  comet:   # Комета
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 8.0
+    height: 10.0
+  planetary_system:   # Планетарная система
+    enabled: true
+    scale: 1.0
+    duration: 18.0
+    speed: 1.0
+    density: 1.0
+    radius: 9.0
+    height: 6.0
+  atom:   # Атом
+    enabled: true
+    scale: 1.0
+    duration: 20.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 5.0
+  lightning:   # Молния
+    enabled: true
+    scale: 1.0
+    duration: 8.0
+    speed: 1.0
+    density: 1.0
+    radius: 6.0
+    height: 18.0
+  thunder_front:   # Грозовой фронт
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 12.0
+    height: 16.0
+  fire_tornado:   # Огненный торнадо
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 12.0
+  ice_tornado:   # Ледяной торнадо
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 12.0
+  waterfall:   # Водяной водопад
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 6.0
+    height: 9.0
+  tsunami:   # Цунами
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 12.0
+    height: 8.0
+  volcano:   # Вулкан
+    enabled: true
+    scale: 1.0
+    duration: 18.0
+    speed: 1.0
+    density: 1.0
+    radius: 5.0
+    height: 12.0
+  earthquake:   # Землетрясение
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 12.0
+  stone_golem:   # Каменный голем
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 3.0
+    height: 7.0
+  dragon:   # Дракон
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 14.0
+    height: 8.0
+  phoenix:   # Феникс
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 7.0
+    height: 8.0
+  fire_meteor:   # Огненный метеор
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 8.0
+    height: 16.0
+  ice_crown:   # Ледяная корона
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 5.0
+    height: 5.0
+  solar_eclipse:   # Солнечное затмение
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 6.0
+    height: 9.0
+  moon_portal:   # Лунный портал
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 5.0
+    height: 8.0
+  magic_portal:   # Магический портал
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 7.0
+  rune:   # Руна
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 5.0
+  magic_circle:   # Магический круг
+    enabled: true
+    scale: 1.0
+    duration: 18.0
+    speed: 1.0
+    density: 1.0
+    radius: 6.0
+  energy_sphere:   # Энергетическая сфера
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 3.0
+  energy_beam:   # Энергетический луч
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 3.0
+    height: 18.0
+  pulse_shield:   # Пульсирующий щит
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 2.0
+  crystal:   # Кристалл
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 3.0
+    height: 6.0
+  crystal_burst:   # Кристаллический взрыв
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 8.0
+    height: 8.0
+  sandstorm:   # Песчаная буря
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 10.0
+  star_rain:   # Звёздный дождь
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 8.0
+    height: 14.0
+  spiral_galaxy:   # Спиральная галактика
+    enabled: true
+    scale: 1.0
+    duration: 18.0
+    speed: 1.0
+    density: 1.0
+    radius: 10.0
+    height: 4.0
+  cube:   # Геометрический куб
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 3.0
+    height: 6.0
+  tesseract:   # Тессеракт
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 5.0
+  hourglass:   # Песочные часы
+    enabled: true
+    scale: 1.0
+    duration: 16.0
+    speed: 1.0
+    density: 1.0
+    radius: 2.5
+    height: 8.0
+  dna_helix:   # ДНК-спираль
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 2.0
+    height: 12.0
+  heart:   # Сердце из частиц
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 3.0
+    height: 3.0
+  flower_burst:   # Цветочный взрыв
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 5.0
+    height: 4.0
+  tree_of_life:   # Дерево жизни
+    enabled: true
+    scale: 1.0
+    duration: 20.0
+    speed: 1.0
+    density: 1.0
+    radius: 5.0
+    height: 10.0
+  whirlpool:   # Водоворот
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 8.0
+    height: 3.0
+  star_burst:   # Звёздный взрыв
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 5.0
+    height: 5.0
+  double_helix:   # Двойная спираль
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 4.0
+    height: 12.0
+  light_arch:   # Арка света
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 6.0
+    height: 8.0
+  energy_column:   # Энергетическая колонна
+    enabled: true
+    scale: 1.0
+    duration: 14.0
+    speed: 1.0
+    density: 1.0
+    radius: 3.0
+    height: 12.0
+  shockwave:   # Шоковая волна
+    enabled: true
+    scale: 1.0
+    duration: 12.0
+    speed: 1.0
+    density: 1.0
+    radius: 10.0
+    height: 5.0
+  apocalypse:   # Финальный апокалипсис
+    enabled: true
+    scale: 1.0
+    duration: 24.0
+    speed: 1.0
+    density: 1.0
+    radius: 10.0
+    height: 16.0
